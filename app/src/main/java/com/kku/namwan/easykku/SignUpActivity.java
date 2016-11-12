@@ -1,5 +1,6 @@
 package com.kku.namwan.easykku;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -59,7 +60,32 @@ public class SignUpActivity extends AppCompatActivity {
         });
 
 
+        // Image Controller
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+                intent.setType("image/*"); //โปรแกรมไหนดูภาพได้ให้เลือกขึ้นมา
+                startActivityForResult(Intent.createChooser(intent, "โปรดเลือกแอปดูภาพ"), 0); //0 คือค่าของ request data ใส่เลขอะไรก้ได้
+
+            } //onClick
+        });
 
     } // Main Method
 
+    @Override
+    protected void onActivityResult(int requestCode,
+                                    int resultCode,
+                                    Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if ((requestCode == 0) && (resultCode == RESULT_OK)) {
+
+            Log.d("12novV1", "Result OK");
+
+        }  // if
+
+
+    } // onActivity
 } // Main Class
