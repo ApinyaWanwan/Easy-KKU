@@ -27,7 +27,7 @@
         android:text="@string/SignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button4"
+        android:id="@+id/button3"
         android:layout_alignParentBottom="true" />
 
     <LinearLayout
@@ -39,7 +39,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="15dp"
         android:layout_marginTop="15dp"
-        android:layout_above="@+id/button4"
+        android:layout_above="@+id/button3"
         android:background="#82ffffff">
 
         <ImageView
@@ -61,8 +61,8 @@
                 android:id="@+id/editText4"
                 android:layout_margin="5dp"
                 android:hint="Name :"
-                android:textColor="@color/aText"
-                android:textColorHint="?attr/actionModeSplitBackground" />
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="?attr/colorControlNormal" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -72,8 +72,8 @@
                 android:layout_margin="5dp"
                 android:hint="Phone :"
                 android:inputType="number"
-                android:textColor="@color/aText"
-                android:textColorHint="?attr/actionModeSplitBackground" />
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="?attr/colorControlNormal" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -83,8 +83,8 @@
                 android:id="@+id/editText2"
                 android:layout_margin="5dp"
                 android:hint="User :"
-                android:textColor="@color/aText"
-                android:textColorHint="?attr/actionModeSplitBackground" />
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="?attr/colorControlNormal" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -94,8 +94,8 @@
                 android:id="@+id/editText"
                 android:layout_margin="5dp"
                 android:hint="Password :"
-                android:textColor="@color/aText"
-                android:textColorHint="?attr/actionModeSplitBackground" />
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="?attr/colorControlNormal" />
         </LinearLayout>
     </LinearLayout>
 
